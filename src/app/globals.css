@@ -47,4 +47,6 @@ body {
   padding: 0;
   background-color: #ffffff; /* ✅ default white background */
   font-family: Arial, sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
