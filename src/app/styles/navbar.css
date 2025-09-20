@@ -1,0 +1,198 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #22b8eb; 
+    padding: 0.5rem 1rem;
+    position: relative;
+    justify-content: space-between;
+  }
+  
+  .navbar-logo {
+    margin-right: 2rem;
+  }
+  
+  .navbar-logo img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease;
+    justify-content: center; 
+    flex: 1
+  }
+  
+  /* Hide hamburger on desktop */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  .navbar-item {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .navbar-item > a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    display: block;
+    transition: all 0.2s ease;
+    color: #ffffff;
+  }
+  
+  /* Hover effect */
+  .navbar-item:hover > a {
+    color: orange;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    position: relative;
+
+  }
+  
+  .navbar-item:hover > a::before,
+  .navbar-item:hover > a::after {
+    content: "[";
+    position: absolute;
+    color: blue;
+  }
+  
+  .navbar-item:hover > a::after {
+    content: "]";
+    right: 0.3rem;
+  }
+  
+  .navbar-item:hover > a::before {
+    left: 0.3rem;
+  }
+  
+  /* Active (on click) */
+  .navbar-item.active > a {
+    color: orange;
+    border-left: 2px solid orange;
+    border-right: 2px solid orange;
+    padding: 0.5rem 1rem;
+  }
+  
+ /* Dropdown menus */
+.dropdown {
+    display: none;
+    position: absolute; /* ✅ overlay outside normal flow */
+    top: 100%; /* ✅ directly below parent */
+    left: 0;
+    background: #ffffff; /* submenu background */
+    list-style: none;
+    padding: 0.5rem 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    min-width: 150px;
+    z-index: 999; /* ✅ ensures overlay on top of other content */
+  }
+  
+  .dropdown li {
+    padding: 0;
+  }
+  
+  .dropdown li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: green; /* ✅ submenu text color */
+    text-decoration: none;
+  }
+  
+  .dropdown li a:hover {
+    background: #f0f0f0;
+  }
+  
+  /* Show dropdown on hover (desktop) */
+  .navbar-item:hover > .dropdown {
+    display: block;
+  }
+  
+  /* Nested right-facing submenu */
+  .submenu-right {
+    position: relative;
+  }
+  
+  .dropdown.right {
+    top: 0;
+    left: 100%; /* ✅ ensures sub-submenu overlays to the right */
+    margin-left: 0.5rem;
+    display: none;
+    z-index: 1000; /* ✅ stays above everything */
+  }
+  
+  .submenu-right:hover > .dropdown.right {
+    display: block;
+  }
+  
+ /* Sidenav styles for mobile */
+@media (max-width: 768px) {
+    .navbar-menu {
+      position: fixed;
+      top: 0;
+      left: 0; /* ✅ aligned left */
+      height: 100vh;
+      width: 250px;
+      background: #ffffff; /* ✅ white background */
+      color: #000; /* ✅ black text */
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 1rem;
+      transform: translateX(-100%); /* ✅ hidden off-screen to the left */
+      transition: transform 0.3s ease;
+      z-index: 1000; /* ✅ overlay on top of content */
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    }
+  
+    .navbar-menu.open {
+      transform: translateX(0); /* ✅ slides in */
+    }
+  
+    .navbar-item {
+      width: 100%;
+    }
+  
+    .navbar-item > a {
+      display: block;
+      width: 100%;
+      padding: 1rem 0;
+      color: #000; /* ✅ black links */
+    }
+  
+    .navbar-item > a:hover {
+      color: orange; /* keep hover effect */
+    }
+  
+    .menu-toggle {
+      display: block;
+      z-index: 1001; /* stays above overlay */
+      color: #000; /* black hamburger/close icon */
+    }
+  
+    /* Adjust dropdown for sidenav */
+    .dropdown {
+      position: static;
+      background: none;
+      border: none;
+      box-shadow: none;
+    }
+  
+    .dropdown li a {
+      padding-left: 1.5rem;
+      color: green; /* keep submenu text color */
+    }
+  
+    .dropdown.right {
+      position: static;
+      margin-left: 1rem;
+    }
+  }
+  
