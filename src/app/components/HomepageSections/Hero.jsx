@@ -5,9 +5,10 @@ export default function Hero() {
   return (
     <section className="hero">
       <div className="hero-overlay">
-        <h1>Transforming lives in Africa</h1>
-        <p>Five million families impacted</p>
+        <h1>Empowering communities through education, healthcare, and social programs </h1>
+        <p>Thousands of students impacted through bursaries.</p>
       </div>
     </section>
   );
 }
+

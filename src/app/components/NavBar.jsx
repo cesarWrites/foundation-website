@@ -14,7 +14,8 @@ export default function NavBar() {
     const handleClick = (item) => {
       setActive(item === active ? null : item);
     };
-  
+    
+    
     return (
       <nav className="navbar">
         {/* Logo */}
@@ -40,7 +41,7 @@ export default function NavBar() {
               <li>
                 <Link href="/about">About Us</Link>
               </li>
-              <li className="submenu-right">
+              {/* <li className="submenu-right">
                 <Link href="#">Our Board of Directors→</Link>
                 <ul className="dropdown right">
                   <li>
@@ -50,9 +51,9 @@ export default function NavBar() {
                     <Link href="#">Sub-Submenu B</Link>
                   </li>
                 </ul>
-              </li>
+              </li> */}
               <li>
-                <Link href="#">Our Founders</Link>
+                <Link href="/our-impact">Our Impact</Link>
               </li>
             </ul>
           </li>
@@ -64,15 +65,21 @@ export default function NavBar() {
             <Link href="#">What We Do</Link>
             <ul className="dropdown">
               <li>
-                <Link href="#">Service 1</Link>
+                <Link href="/education-support">Educational Support</Link>
               </li>
               <li>
-                <Link href="#">Service 2</Link>
+                <Link href="/healthcare-initiative">Healthcare Initiatives</Link>
+              </li>
+              <li>
+                <Link href="/community-emporwerment">Community Empowerment </Link>
+              </li>
+              <li>
+                <Link href="/sustainable-development">Sustainable Development</Link>
               </li>
             </ul>
           </li>
   
-          <li
+          {/* <li
             className={`navbar-item ${active === "about" ? "active" : ""}`}
             onClick={() => handleClick("about")}
           >
@@ -85,19 +92,19 @@ export default function NavBar() {
                 <Link href="#">History</Link>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li className={`navbar-item ${active === "impact" ? "active" : ""}`}
             onClick={() => handleClick("impact")}>
-          <Link href="#">Program Impact</Link>
+          <Link href="/program-impact">Program Impact</Link>
           </li>
           <li className={`navbar-item ${active === "donate" ? "active" : ""}`}
             onClick={() => handleClick("donate")}>
-          <Link href="#">Donate</Link>
+          <Link href="/donate">Donate</Link>
           </li>
-          <li className={`navbar-item ${active === "volunteer" ? "active" : ""}`}
+          {/* <li className={`navbar-item ${active === "volunteer" ? "active" : ""}`}
             onClick={() => handleClick("volunteer")}>
           <Link href="#">Volunteer Form</Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     );

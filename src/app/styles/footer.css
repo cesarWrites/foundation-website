@@ -1,5 +1,5 @@
 .footer {
-    background-color: #151413;
+    background-color: #018846;;
     color: #fff;
     padding: 3rem 2rem 1rem;
     font-size: 0.9rem;
@@ -26,7 +26,7 @@
   .footer-col h4 {
     margin-bottom: 1rem;
     font-size: 1.1rem;
-    border-bottom: 2px solid #ff7f50; /* orange accent */
+    border-bottom: 2px solid #EAA70E; /* orange accent */
     display: inline-block;
     padding-bottom: 0.3rem;
   }
@@ -48,13 +48,13 @@
   }
   
   .footer-col ul li a:hover {
-    color: #ff7f50; /* orange hover */
+    color: #EAA70E; /* orange hover */
   }
   
   .tagline {
     margin-top: 0.5rem;
     font-style: italic;
-    color: #ccc;
+    color: #000;
   }
   
   .socials {
@@ -70,7 +70,7 @@
   }
   
   .socials a:hover {
-    color: #ff7f50;
+    color: #EAA70E;
   }
   
   .footer-bottom {
@@ -78,6 +78,6 @@
     border-top: 1px solid #444;
     padding-top: 1rem;
     font-size: 0.8rem;
-    color: #aaa;
+    color: #000;
   }
   

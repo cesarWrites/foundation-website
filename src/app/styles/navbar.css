@@ -1,19 +1,26 @@
 .navbar {
     display: flex;
     align-items: center;
-    background-color: #22b8eb; 
+    background-color: #018846; 
     padding: 0.5rem 1rem;
     position: relative;
     justify-content: space-between;
+
   }
   
   .navbar-logo {
     margin-right: 2rem;
+    background: rgba(255,255,255,0.8); 
+    padding: 6px 10px;
+    border-radius: 8px;
+    display: inline-block;
   }
   
   .navbar-logo img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px; 
+    /* background: rgba(rgba(0, 0, 0, .5)); */
+    /* background: transparent; */
   }
   
   .navbar-menu {

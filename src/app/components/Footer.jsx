@@ -2,6 +2,7 @@ import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import "../styles/footer.css"
 
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -9,7 +10,7 @@ export default function Footer() {
         {/* Logo + Tagline */}
         <div className="footer-col">
           <Image src="/logo.png" alt="Logo" width={50} height={50} />
-          <p className="tagline">Transforming lives across Africa</p>
+          <p className="tagline">Empowering communities through education, healthcare, and social programs. </p>
         </div>
 
         {/* Quick Links */}

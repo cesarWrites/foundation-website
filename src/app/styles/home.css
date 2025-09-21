@@ -50,20 +50,30 @@
     margin-bottom: 1rem;
   }
   
-  /* The Plan */
   .the-plan {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 2rem;
     gap: 2rem;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    background: #fff; /* keep consistent background */
   }
   
   .plan-text,
   .plan-image {
     flex: 1;
-    min-width: 280px;
+    min-width: 280px; /* prevents text/image from shrinking too small */
+  }
+  
+  .plan-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .plan-text p {
+    line-height: 1.6;
+    color: #333;
   }
 
   /* Testimonial */
@@ -120,12 +130,38 @@
   
     .plan-image,
     .what-image {
-      order: -1; /* ✅ show images first on mobile */
+      order: -1; 
     }
   }
   
-  @media (max-width: 768px) {
-    .the-plan{
-        width: fit-content;
-    }
+/* ✅ Mobile adjustments */
+@media (max-width: 768px) {
+  .the-plan {
+    flex-direction: column; /* stack vertically */
+    text-align: center;
+    padding: 1.5rem;
   }
+
+  .plan-image {
+    order: -1; /* show image above text */
+  }
+
+  .plan-image img {
+    width: 100%; /* responsive image */
+    height: auto;
+    border-radius: 8px; /* optional for nicer look */
+  }
+
+  .plan-text {
+    padding: 0.5rem;
+  }
+
+  .plan-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .plan-text p {
+    font-size: 1rem;
+  }
+}
+

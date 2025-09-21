@@ -1,0 +1,119 @@
+.donation-page {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background: #fff;
+  }
+  
+  .donation-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .donation-intro h1 {
+    color: #004aad; 
+    font-size: 2rem;
+  }
+  
+  .donation-intro p {
+    color: #333;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  /* Form */
+  .donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .form-section input,
+  .form-section select {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .amount-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .amount-card {
+    background: #f1f1f1;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+  }
+  
+  .amount-card:hover {
+    border-color: #EAA70E;
+    color: #EAA70E;
+  }
+  
+  .amount-card.selected {
+    border-color: green;
+    background: #e6ffe6;
+    color: #006400;
+  }
+  
+  .donor-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .payment-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .payment-process {
+    padding: 1rem;
+    background: #f9f9f9;
+    border-left: 4px solid #004aad;
+    border-radius: 6px;
+  }
+  
+  .donate-btn {
+    background-color: #004aad;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  
+  .donate-btn:hover {
+    opacity: 0.9;
+    background-color: #EAA70E;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .donor-details {
+      flex-direction: column;
+    }
+  
+    .amount-cards {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  

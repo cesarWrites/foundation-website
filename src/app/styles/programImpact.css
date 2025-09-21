@@ -1,0 +1,83 @@
+.impact-page {
+    padding: 2rem;
+    background: #f8f8f8; /* light gray page background for contrast */
+  }
+  
+  .impact-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #000;
+  }
+  
+  .impact-list {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  /* ✅ Article card */
+  .impact-item {
+    background: #fff; /* white background */
+    border-radius: 8px; /* slightly rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .impact-item:hover {
+    transform: translateY(-3px); /* lift effect */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* ✅ Title link */
+  .impact-link {
+    text-decoration: none; /* remove underline */
+  }
+  
+  .impact-link h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin: 0 0 0.5rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .impact-link h2:hover {
+    color: orange; /* hover effect */
+  }
+  
+  /* ✅ Preview text */
+  .impact-item p {
+    margin: 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .donate-cta{
+    margin-left: 50%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
+
+  .donate-article-btn {
+    background: #004aad; 
+    color: #fff;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    align-content: center;
+    text-decoration: none;
+  }
+  
+  .donate-article-btn:hover {
+    background: #EAA70E; /* orange on hover */
+  }
+  
+  
