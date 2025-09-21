@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import bursary from "../../assets/bursary.jpeg";
 import bursary2 from "../../assets/bursary2.jpeg";
 
