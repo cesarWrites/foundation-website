@@ -5,11 +5,12 @@ import Footer from "./components/Footer";
 
 
 export const metadata = {
-  title: "GK Foundatiion",
-  description: "Our mission is to empower communities through education, healthcare, and social programs that raise lives. ",
+  title: "GK Foundation",
+  description: "GK Foundation empowers communities through education, healthcare, and social programs that raise lives. ",
   keywords: [
     "George Kithi Foundation",
     "gk foundation",
+    "gkfoundation",
     "bursary program Kenya",
     "Kilifi County",
     "Ganze",
