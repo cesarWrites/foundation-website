@@ -5,15 +5,26 @@ import Footer from "./components/Footer";
 
 
 export const metadata = {
-  title: "My Static Site",
-  description: "Next.js static website with custom NavBar",
+  title: "GK Foundatiion",
+  description: "Our mission is to empower communities through education, healthcare, and social programs that raise lives. ",
+  keywords: [
+    "George Kithi Foundation",
+    "gk foundation",
+    "bursary program Kenya",
+    "Kilifi County",
+    "Ganze",
+    "student support",
+    "HISA ZIPO CBO",
+  ],
 };
+
+
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <NavBar />   {/* ✅ NavBar will show on every page */}
+        <NavBar />   
         <main>{children}</main>
         <Footer/>
       </body>
