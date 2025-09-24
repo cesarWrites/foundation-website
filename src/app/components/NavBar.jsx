@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/navbar.css"
-import logo from '../../../public/logo.png' 
+import logo from '../../../public/logo.svg' 
 
 export default function NavBar() {
     const [active, setActive] = useState(null);

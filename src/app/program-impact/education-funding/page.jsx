@@ -6,7 +6,7 @@ import student1 from "../../assets/student-support2.jpeg";
 
 export default function StoryTwo() {
     return (
-      <main style={{ padding: "3rem" }}>
+      <main className= "article-content" style={{ padding: "3rem" }}>
         <h1>Bright Needy Students in Ganze Get Lifeline Through Our Bursary Program</h1>
         <p>More than 100 students in Ganze Constituency have received bursaries from the George Kithi Foundation in its latest effort to raise education levels in Kilifi County. The beneficiaries each received Ksh 5,000, a timely gesture that will keep poor but brilliant students in school and on track to further their studies.</p>
         <Image src={student} 

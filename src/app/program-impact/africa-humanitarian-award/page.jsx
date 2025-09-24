@@ -5,7 +5,7 @@ import africaaward1 from "../../assets/africa-humanitarian1.jpeg"
 
 export default function StoryThree() {
     return (
-        <main style={{ padding: "3rem" }}>
+        <main className= "article-content" style={{ padding: "3rem" }}>
             <h1>George Kithi Foundation Wins Africa's 2025 Humanitarian Award of the Year</h1>
             <p>The George Kithi Foundation has won the award for Humanitarian Foundation of the Year 2025 in Africa at a prestigious continental event in Dar es Salaam, Tanzania. The award is a recognition of the foundation's transformative interventions in some of the most pressing issues facing communities in Kilifi County, Kenya, through education, health, and empowerment programs.</p>
             <Image src={africaaward} 

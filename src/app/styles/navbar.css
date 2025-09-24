@@ -5,12 +5,11 @@
     padding: 0.5rem 1rem;
     position: relative;
     justify-content: space-between;
-
   }
   
   .navbar-logo {
     margin-right: 2rem;
-    background: rgba(255,255,255,0.8); 
+    /* background: rgb(255, 255, 255);  */
     padding: 6px 10px;
     border-radius: 8px;
     display: inline-block;
@@ -91,16 +90,16 @@
  /* Dropdown menus */
 .dropdown {
     display: none;
-    position: absolute; /* ✅ overlay outside normal flow */
-    top: 100%; /* ✅ directly below parent */
+    position: absolute; 
+    top: 100%; 
     left: 0;
-    background: #ffffff; /* submenu background */
+    background: #ffffff; 
     list-style: none;
     padding: 0.5rem 0;
     margin: 0;
     border: 1px solid #ccc;
     min-width: 150px;
-    z-index: 999; /* ✅ ensures overlay on top of other content */
+    z-index: 999; 
   }
   
   .dropdown li {
@@ -110,7 +109,7 @@
   .dropdown li a {
     display: block;
     padding: 0.5rem 1rem;
-    color: green; /* ✅ submenu text color */
+    color: green; 
     text-decoration: none;
   }
   
@@ -130,10 +129,10 @@
   
   .dropdown.right {
     top: 0;
-    left: 100%; /* ✅ ensures sub-submenu overlays to the right */
+    left: 100%; 
     margin-left: 0.5rem;
     display: none;
-    z-index: 1000; /* ✅ stays above everything */
+    z-index: 1000; 
   }
   
   .submenu-right:hover > .dropdown.right {
@@ -145,22 +144,22 @@
     .navbar-menu {
       position: fixed;
       top: 0;
-      left: 0; /* ✅ aligned left */
+      left: 0; 
       height: 100vh;
       width: 250px;
-      background: #ffffff; /* ✅ white background */
-      color: #000; /* ✅ black text */
+      background: #ffffff; 
+      color: #000; 
       flex-direction: column;
       align-items: flex-start;
       padding: 2rem 1rem;
-      transform: translateX(-100%); /* ✅ hidden off-screen to the left */
+      transform: translateX(-100%); 
       transition: transform 0.3s ease;
-      z-index: 1000; /* ✅ overlay on top of content */
+      z-index: 1000; 
       box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     }
   
     .navbar-menu.open {
-      transform: translateX(0); /* ✅ slides in */
+      transform: translateX(0); 
     }
   
     .navbar-item {
@@ -171,17 +170,17 @@
       display: block;
       width: 100%;
       padding: 1rem 0;
-      color: #000; /* ✅ black links */
+      color: #000; 
     }
   
     .navbar-item > a:hover {
-      color: orange; /* keep hover effect */
+      color: orange; 
     }
   
     .menu-toggle {
       display: block;
-      z-index: 1001; /* stays above overlay */
-      color: #000; /* black hamburger/close icon */
+      z-index: 1001; 
+      color: #000; 
     }
   
     /* Adjust dropdown for sidenav */
@@ -194,7 +193,7 @@
   
     .dropdown li a {
       padding-left: 1.5rem;
-      color: green; /* keep submenu text color */
+      color: green; 
     }
   
     .dropdown.right {

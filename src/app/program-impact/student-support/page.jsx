@@ -5,7 +5,7 @@ import bursary2 from "../../assets/bursary2.jpeg";
 
 export default function StoryFive() {
     return (
-        <main style={{ padding: "2rem" }}>
+        <main className= "article-content" style={{ padding: "2rem" }}>
             <h1>Jila Community, George Kithi Foundation Partner to Secure Student’s Future</h1>
             <p>We commended the people of Jila for uniting to ensure Asman Ndoro Hamisi reported to Shimo la Tewa High School. The effort, which was marked by peace and a sense of shared responsibility, highlights the essential contributions of local communities in making education accessible to needy students.</p>
             <Image src={bursary} 

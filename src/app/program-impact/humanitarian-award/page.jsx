@@ -6,7 +6,7 @@ import award2 from "../../assets/humanitarian2.jpeg";
 export default function StoryOne() {
     
     return (
-      <main style={{ padding: "2rem" }}>
+      <main className= "article-content" style={{ padding: "2rem" }} >
         <h1>George Kithi Foundation Wins Humanitarian Group Award at East African Super Woman Awards 2025..</h1>
         <Image src={award1}
         alt='Receiving award'

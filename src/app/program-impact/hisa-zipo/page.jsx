@@ -6,7 +6,7 @@ import hisa1 from "../../assets/hisa2.jpeg";
 
 export default function StoryFour() {
     return (
-        <main style={{ padding: "2rem" }}>
+        <main className= "article-content" style={{ padding: "2rem" }}>
             <h1>HISA ZIPO CBO Gets Ksh 500,000 Support as It Transitions Into a SACCO</h1>
             <p>The Foundation has funded grassroots empowerment in Kilifi County with a Ksh 500,000 donation to HISA ZIPO CBO, a community-based organization with more than 1,500 members drawn from Ganze, Kaloleni, Rabai, and Kilifi North. The donation aims to support the process of the group in being a registered Savings and Credit Cooperative (SACCO).</p>
             <Image src={hisa} 
