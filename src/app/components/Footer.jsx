@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="footer-top">
         {/* Logo + Tagline */}
         <div className="footer-col">
-          <Image src="/logo.png" alt="Logo" width={50} height={50} />
+          <Image src="/logo.svg" alt="Logo" width={50} height={50} />
           <p className="tagline">Empowering communities through education, healthcare, and social programs. </p>
         </div>
 
